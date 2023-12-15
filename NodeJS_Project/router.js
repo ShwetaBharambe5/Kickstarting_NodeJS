@@ -41,7 +41,8 @@ const requestHandler = (req, res) => {
             res.writeHead(302, { 'Location': '/' });
             return res.end();
         });
-    } else {
+    } 
+    else {
         res.setHeader('Content-Type', 'text/html');
         res.write('<html>');
         res.write('<head><title>My First Page</title></head>');
